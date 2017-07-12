@@ -18,7 +18,7 @@ the video name with link;
 the video description; number of plays, comments, and likes.
 The text should not wrap below the author image. 
 The default view should only be 10 results.
-the ability to view 10, 25, or 50 maximum results. 
+the ability to view 10, 20, or 30 maximum results. 
 the ability to filter videos from users that have more than 10 likes.(not videos that have more than 10 likes.)
 A simple checkbox with description for UI.
 
