@@ -23,7 +23,7 @@ the ability to filter videos from users that have more than 10 likes.(not videos
 A simple checkbox with description for UI.
 
 *******************************
-##   how to start the app.
+##   How to start the app:
 
 *******************************
 ## run the following commands:
