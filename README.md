@@ -27,9 +27,8 @@ A simple checkbox with description for UI.
 
 *******************************
 ## Prerequisites
-
-Both the CLI and generated project have dependencies that require Node 6.9.0 or higher, together
-with NPM 3 or higher.
+you need Node 6.9.0 or higher, together with NPM 3 or higher.
+*******************************
     npm install
     ng serve
 *******************************
