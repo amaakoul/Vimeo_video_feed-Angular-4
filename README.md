@@ -1,6 +1,8 @@
 # Vimeo-video-feed
 
- 
+## Screenshot of the app
+![project-sc](https://user-images.githubusercontent.com/24715141/28134066-bdad79d2-6739-11e7-8bd5-d9af531dc1d7.png)
+
 ## Description
 the app does display the results of a vimeo feed into a page, and provide a basic form to filter those results using Angular 4.
 
