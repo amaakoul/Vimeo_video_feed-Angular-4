@@ -22,12 +22,12 @@ the ability to view 10, 25, or 50 maximum results.
 the ability to filter videos from users that have more than 10 likes.(not videos that have more than 10 likes.)
 A simple checkbox with description for UI.
 
-##  how to start the app.
+##   how to start the app.
 
 *******************************
-##run the following commands:
-##npm install
-##ng serve
+## run the following commands:
+## npm install
+## ng serve
 *******************************
 
 ## Development server
