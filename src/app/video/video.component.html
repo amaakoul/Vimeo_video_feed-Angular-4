@@ -1,0 +1,80 @@
+<div class="wrapper" >
+
+    <div class="sidebar col-sm-4 col-md-4 row pull-right">
+        <div class="">
+            <div class="">
+                <h3>Advance tools</h3>
+                <div class="caption">
+                    <hr>
+                    <h2>Custom Search</h2>
+                    <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2">search</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+                    </div>
+                    <h4>users that have more than 12 likes</h4>
+                    <div class="container">
+                    <label for="exampleSelect1">Show</label>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" [(ngModel)]="videoList" checked="{{FilterChecked}}"/>
+                        <label for="checkbox"></label>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" #newSelect [(ngModel)]="videoListLength" (change)="onChange(videoListLength)">
+                        <option value="10" selected="selected">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        </select>
+                    </div>
+                    {{videoListLength}} videos loaded!
+                    <hr>
+                    easy load is implemented to load videos while you scroll for more content.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feed thumbnail row" *ngFor="let video of myVideoFeed; let i = index">
+            <div class="video-section">
+                <div class="video-header">
+                    <img class="e2e-trusted-url user-icon" src="https://openclipart.org/image/300px/svg_to_png/247319/abstract-user-flat-3.png&disposition=attachment" alt="...">
+                    <span class="user-title">{{ myVideoFeed[i].name }} </span><span>{{ myVideoFeed[i].created_time }} </span>
+                </div>
+
+                <div class='ellipsis'>
+                    <div class='content'>
+                        <div class='text'>{{ myVideoFeed[i].description }}</div>
+                        <div class='overlay'>
+                            <div class='placeholder'></div>
+                            <div class='more'>...<a href="#">learn more</a></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <iframe class="e2e-iframe-trusted-src" width="80%" height="380" [src]="myVideoFeed[i].link" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
+            </div>
+
+            <div class="ratings-section grey">
+                <div class="col-sm-4 col-md-4">
+                    <span class=" badge-warning">{{ myVideoFeed[i].metadata.connections.likes.total }}</span>
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <span class=" badge-warning">{{ myVideoFeed[i].metadata.connections.likes.total }}</span>
+                    <span class="glyphicon glyphicon-heart-empty"></span>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <span class=" badge-warning">{{ myVideoFeed[i].metadata.connections.comments.total }}</span>
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+            </div>
+
+    </div>
+
+</div>
